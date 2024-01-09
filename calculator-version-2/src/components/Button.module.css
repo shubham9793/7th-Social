@@ -1,0 +1,21 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+    
+}
+
+.button:hover{
+    /* background-color: blue;
+    color: azure; */
+
+    background: rgb(34, 193, 195);
+        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color: yellow;
+}

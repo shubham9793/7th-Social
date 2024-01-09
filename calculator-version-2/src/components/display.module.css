@@ -1,0 +1,12 @@
+.display {
+    margin: 10px;
+    width: 175px;
+    font-size: 25px;
+    background-color: #a5dabc;
+    
+}
+.display:hover{
+    background: rgb(236, 173, 38);
+        background: linear-gradient(0deg, rgba(236, 173, 38, 1) 6%, rgba(34, 193, 195, 1) 100%);
+    color: yellow;
+}

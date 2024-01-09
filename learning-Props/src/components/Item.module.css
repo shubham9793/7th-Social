@@ -1,0 +1,21 @@
+.kgItem{
+    background-color: #fff;
+}
+
+.kgSpan{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.button{
+    float: right;
+    width: 80px;
+}
+
+.kgItemSelected {
+    background-color: yellow;
+}
+.active {
+    background-color: yellow;
+    /* Change this to your desired color */
+}
