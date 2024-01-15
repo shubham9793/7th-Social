@@ -1,0 +1,156 @@
+/* .appContainer {
+    display: flex;
+    
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+   
+}
+
+.sidebar{
+    min-height: 685px;
+    max-height: 685px;
+}
+
+.postCard{
+    margin: 20px 50px;
+
+
+}
+
+.hastag{
+    margin: 0px 3px;
+}
+
+.reactions{
+    margin:15px 0 0 0 ;
+}
+
+
+.createPost {
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 47px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+.WelcomeMessage{
+    margin:120px ;
+} */
+
+
+
+/* App.css */
+.appContainer {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding-left: 250px;
+    /* Adjust based on your sidebar's width */
+    transition: padding 0.3s ease;
+}
+
+.sidebar {
+    min-height: 685px;
+    max-height: 685px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #eee;
+    overflow-y: auto;
+    z-index: 900;
+}
+
+/* Add this style to ensure the sidebar doesn't overlap with the content */
+.sidebar+.content {
+    padding-left: 250px;
+}
+
+.postContainer {
+    position: relative;
+}
+
+.postCard {
+    margin: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.hastag {
+    margin: 0px 3px;
+}
+
+.reactions {
+    margin: 15px 0 0 0;
+}
+
+.createPost {
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 47px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.WelcomeMessage {
+    margin: 120px;
+}
+
+.expandedCard {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    /* Adjust based on your sidebar's width */
+    width: calc(100% - 250px);
+    /* Adjust based on your sidebar's width */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1001;
+    /* Set a higher z-index than postCard */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    display: none;
+}
+
+.postCard:hover+.expandedCard,
+.expandedCard:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.loading {
+    margin-top:  250px;
+    margin-left: 50px;
+    margin-bottom: 250px;
+    
+}
